@@ -1,3 +1,7 @@
+_work
+.vscode
+
+
 # Logs
 logs
 *.log

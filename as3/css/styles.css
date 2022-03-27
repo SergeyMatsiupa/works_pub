@@ -1,22 +1,18 @@
 body {
     font-family: 'Nanum Gothic', sans-serif;
-    color: #186AA5
-}
-
-.head {
-
+    color: #186AA5;
 }
 
 .container {
     width: 74%;
-    max-width: 1200px;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
 .top-menu {
     margin: 3.38vw 0 ;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 1.228vw;
+    line-height: 1.658vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,8 +26,8 @@ body {
 }
 
 .top-menu-logo {
-    max-height: 50px;
-    max-width: 120px;
+    max-height: 3.07vw;
+    max-width: 7.367vw;
 }
 
 .top-menu-menu-switchable {
@@ -52,14 +48,381 @@ body {
 }
 
 .top-menu-item-a:hover {
-    text-decoration: underline 3px;
+    text-decoration: underline 0.184vw;
 }
 
 .top-img-block {
     background: url('../img/Rammstein-shirtless.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
+    /* background-clip: content-box; */
     height: 33.76vw;
     text-align: center;
-    /* padding: 9.2vw; */
+    box-sizing: border-box;
+    padding: 8.44vw 8.44vw;
+}
+
+h1 {
+    font-size: 4.6vw;
+    font-weight: bold;
+    margin-bottom: 2vw;
+}
+
+.top-block-txt {
+    font-size: 1.474vw;
+    line-height: 1.5;
+}
+
+.new-albom-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3.99vw auto 0 auto;
+}
+
+.new-albom-block-img {
+    width: 29.466vw;
+}
+
+.new-albom-block-txt {
+    padding: 0 8vw 0 0;
+}
+
+h2 {
+    font-size: 2.76243vw;
+    line-height: 3.06937vw;
+    font-weight: bold;
+}
+
+.small-text {
+    font-size: 1.105vw;
+    line-height: 1.4733vw;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.button-gen {
+    font-size: 1.105vw;
+    padding: 1.2vw 6vw;
+    background: transparent;
+    border-style: solid;
+    border-color: #186AA5;
+    color: #186AA5;
+    border-width: 2px;
+    border-radius: 3%;
+    margin: 1.5vw 0 0 0;
+    cursor: pointer;
+}
+
+.upcoming-dates-block {
+    text-align: center;
+    margin-top: 7.6734vw;
+}
+
+.upcoming-dates-events-block {
+    display: flex;
+    justify-content: space-between;
+    gap: 7.4vw;
+    margin: 6.876vw 5.2179vw 3.5vw 5.2179vw;
+}
+
+.upcoming-dates-places-txt {
+    font-weight: bold;
+    font-size: 2.21vw; /* 36px    */
+    line-height: 2.7625vw;  /* 45px */
+    margin: 1.0436vw 0;
+}
+
+.gallery {
+    text-align: center;
+    margin: 7.4279vw auto 1.9644vw auto;
+}
+
+.gallery-imgs {
+    display: grid;
+    grid-template-areas: 
+        "one one two"
+        "one one three";
+    grid-gap: 1.136vw;
+    margin-top: 1.964vw;
+}
+#first-img {
+    grid-area: one;
+    /* background-color: red; */
+}
+#second-img {
+    grid-area: two;
+    /* background-color: green; */
+}
+#third-img {
+    grid-area: three;
+    /* background-color: blue; */
+}
+
+.image100 {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.footer-block {
+    background-color: #fafafa;
+    text-align: right;
+    padding: 2.4555vw 2.7624vw;
+    box-sizing: border-box;
+    margin-bottom: 11.97vw;
+}
+
+.footer-icon {
+    height: 3.376vw;
+}
+
+.footer-block > a {
+    text-decoration: none;
+}
+
+.footer-block > a:not(:last-of-type) {
+    margin-right: 0.98vw;
+    /* background-color: red; */
+}
+
+.top-menu-menu-checkbox {
+	display: none;
+    position: absolute;
+    z-index: 3;
+    display: block;
+    width: 6.4vw;
+    height: 3.84vw;
+    opacity: 0;
+}
+
+.top-menu-menu-check-wrapper {
+	display: none;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 89%;
+    }
+
+    .top-menu {
+        font-size: 1.9vw;
+        line-height: 2.2vw;
+    }
+
+    .top-menu-logo {
+        max-height: 6.25vw;
+        max-width: 32vw;
+    }
+
+    .top-menu-item-a:hover {
+        text-decoration: underline 0.25vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    .top-img-block {
+        padding: 8.44vw 18vw;
+    }
+
+    .top-block-txt {
+        font-size: 2vw;
+        line-height: 2.5;
+    }
+
+    h2 {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    .small-text {
+        font-size: 2vw;
+        line-height: 2.5vw;
+    }
+
+    .button-gen {
+        font-size: 2vw;
+    }
+
+    .upcoming-dates-events-block {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 7vw 10vw;
+        margin: 6.876vw 16vw 3.5vw 16vw;
+    }
+
+    .upcoming-dates-places-txt {
+        font-size: 3.5vw;
+        line-height: 4vw;
+    }
+
+    .upcoming-dates-events-block > * { 
+        flex: 1;
+    }
+
+    .footer-block > a:not(:last-of-type) {
+        margin-right: 4vw;
+        /* background-color: red; */
+    }
+}
+
+
+@media (max-width: 375px) {
+    .container {
+        width: 87%;
+    }
+
+    .top-menu-menu {
+        position: relative;
+    }
+
+    .top-menu {
+        margin: 6.4vw 0;
+    }
+
+    .top-menu-menu-switchable {
+        display: none; 
+    }
+    
+    .top-menu-menu-checkbox {
+        display: block;
+        right: 0;
+    }
+
+    .top-menu-menu-check-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 6.4vw;
+        align-items: flex-end;
+        z-index: 2;
+    }
+
+    .top-menu-menu-check {
+        width: 6.4vw;
+        height: 0.7vw;
+        background: #186AA5;
+        transition: 500ms linear;
+    }
+
+    .top-menu-menu-check:not(:last-of-type) {
+        margin-bottom: 0.8vw;
+    }
+
+    .top-menu-menu-check-wrapper > .top-menu-menu-check:nth-child(1) {
+        width: 100%;
+    }
+
+    .top-menu-menu-check-wrapper > .top-menu-menu-check:nth-child(2) {
+        width: 75%;
+    }
+
+    .top-menu-menu-check-wrapper > .top-menu-menu-check:nth-child(3) {
+        width: 50%;
+    }
+
+    .top-menu-menu-checkbox:checked ~ .top-menu-menu-check-wrapper > .top-menu-menu-check:first-of-type {
+        transform: rotate(45deg) translate(20%, 140%);
+        /* background-color: red; */
+    }
+
+    .top-menu-menu-checkbox:checked ~ .top-menu-menu-check-wrapper > .top-menu-menu-check:nth-child(2) {
+        opacity: 0;
+    }
+
+    .top-menu-menu-checkbox:checked ~ .top-menu-menu-check-wrapper > .top-menu-menu-check:last-of-type {
+        transform: rotate(-45deg) translate(20%, -140%);
+        width: 100%;
+    }
+
+    .top-menu-menu-checkbox:checked ~ .top-menu-menu-switchable {
+        display: block;
+        position: fixed;
+        background: #dae2ed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        padding-top: 13vw;
+        padding-left: 40vw;
+    }
+
+    .top-menu-item {
+        display: block;
+    }
+
+    .top-menu-item-a {
+        font-size: 7vw;
+        line-height: 10vw;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    .top-block-txt {
+        font-size: 4vw;
+        line-height: 1.0;
+    }
+
+    .top-img-block {
+        padding: 3vw 10vw;
+    }
+
+    .new-albom-block {
+        margin: 11vw auto 0 auto;
+        flex-direction: column-reverse;
+    }
+
+    .new-albom-block-txt {
+        padding: 2vw 10vw;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 5vw;
+        line-height: 6vw;
+    }
+
+    .small-text {
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    .button-gen {
+        font-size: 4vw;
+    }
+
+    .upcoming-dates-block {
+        margin-top: 11vw;
+    }
+
+    .upcoming-dates-events-block {
+        flex-direction: column;
+    }
+
+    .upcoming-dates-places-txt {
+        font-size: 5.5vw;
+        line-height: 6vw;
+    }
+
+    .gallery-imgs {
+        grid-template-areas: "one one" "two three";
+        grid-gap: 3vw;
+    }
+
+    .footer-block {
+        text-align: center;
+    }
+
+    .footer-icon {
+        height: 8vw;
+    }
+
+    .footer-block > a:not(:last-of-type) {
+        margin-right: 17vw;
+    }
 }

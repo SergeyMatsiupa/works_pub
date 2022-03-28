@@ -128,7 +128,7 @@ h2 {
     margin: 6.876vw 5.2179vw 3.5vw 5.2179vw;
 }
 
-.upcoming-dates-places-txt {
+.caption-middle-txt {
     font-weight: bold;
     font-size: 2.21vw; /* 36px    */
     line-height: 2.7625vw;  /* 45px */
@@ -191,7 +191,6 @@ h2 {
 	display: none;
     position: absolute;
     z-index: 3;
-    display: block;
     width: 6.4vw;
     height: 3.84vw;
     opacity: 0;
@@ -201,6 +200,64 @@ h2 {
 	display: none;
 }
 
+.text-top-block {
+    background: #fafafa;
+    text-align: center;
+    padding: 3vw 12vw 6vw 12vw;
+    box-sizing: border-box;
+}
+
+.merch-products-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5vw;
+}
+
+.merch-products-item {
+    text-align: center;
+    margin-bottom: 4vw;
+}
+
+.product-img {
+    width: 22.0381vw;
+}
+
+.tickets-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 3vw auto 8vw auto;
+}
+
+.tickets-table-col1 {
+    width: 12%;
+}
+
+.tickets-table-col2 {
+    width: 30%;
+}
+
+.tickets-table-col3 {
+    width: 32%;
+}
+
+.tickets-table-col4 {
+    text-align: right;
+}
+
+.tickets-table-row > td {
+    padding: 2.5vw 0;
+    vertical-align: middle; 
+}
+
+.tickets-table-row > td > .button-gen {
+    margin: 0;
+}
+
+.tickets-table-row {
+    border-bottom: solid 2px;
+    vertical-align: middle; 
+}
 
 @media (max-width: 768px) {
     .container {
@@ -255,7 +312,7 @@ h2 {
         margin: 6.876vw 16vw 3.5vw 16vw;
     }
 
-    .upcoming-dates-places-txt {
+    .caption-middle-txt {
         font-size: 3.5vw;
         line-height: 4vw;
     }
@@ -268,6 +325,15 @@ h2 {
         margin-right: 4vw;
         /* background-color: red; */
     }
+
+    .merch-products-block {
+        justify-content: space-evenly;
+    }
+
+    .product-img {
+        width: 30vw;
+    }
+
 }
 
 
@@ -404,7 +470,7 @@ h2 {
         flex-direction: column;
     }
 
-    .upcoming-dates-places-txt {
+    .caption-middle-txt {
         font-size: 5.5vw;
         line-height: 6vw;
     }
@@ -424,5 +490,20 @@ h2 {
 
     .footer-block > a:not(:last-of-type) {
         margin-right: 17vw;
+    }
+
+    .product-img {
+        width: 45vw;
+    }
+
+    .tickets-table-row > td {
+        padding: 0.5vw 1.5vw;
+        text-align: center;
+        height: 20vw;
+    }
+
+    .tickets-table-row > td > .button-gen {
+        padding: 0;
+        font-size: 3.5vw;
     }
 }
